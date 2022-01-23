@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="homepage.css">
+		<title>Login/SignUp</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<style>
+			label {
+				font-size: 16px;
+			}
+		</style>
+		<div class="container-fluid" style="padding:0px!important">
+		<nav>
+            <ul>
+                <li><a href="homepage.html">Online Quiz System</a></li>
+                <li><a href="contactus.html">Contact Us </a></li>
+                <li><a href="homepage.html">About Us</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+		
+			
+			<form action="logincode.php" method="POST" class="form-horizontal   needs-validation" novalidate 
+			 style="padding-top: 70px;" >
+			
+			
+				<div class="col-sm-offset-4 col-sm-4" style="box-shadow: 0px 0px 8px 5px lightgrey;">
+					
+				<h2><center>LOGIN</center></h2>
+
+					<div class="form-group" >
+						<!--label class="control-label col-sm-4">Email:</label-->
+						<div class="col-sm-12" style="border:1 px solid black;padding:0px 70px 0px 70px!important;">
+							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email"required>
+							<div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+
+						</div>
+					</div>
+
+					<div class="form-group">
+
+						<!--label class="control-label col-sm-4">Password:</label-->
+						<div class="col-sm-12" style="border:1 px solid black;padding:0px 70px 0px 70px!important;">
+							<input type="password" class="form-control" id="password" placeholder="Password"
+								name="password" required>
+								 <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="col-sm-12">
+							<p style="text-align: center;">Visiting For The First Time?<a href="signup.html">Register Here</a></p>	
+							<div class="col-sm-6 col-sm-offset-4">
+								<button type="submit" name="login_btn" class="btn btn-primary">Submit</button>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			
+				
+			</form>
+			
+	
+		</div>
+		<script>
+			// Disable form submissions if there are invalid fields
+			(function() {
+			  'use strict';
+			  window.addEventListener('load', function() {
+				// Get the forms we want to add validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function(form) {
+				  form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+					  event.preventDefault();
+					  event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				  }, false);
+				});
+			  }, false);
+			})();
+			</script> 
+
+
+
+		<div class="foot" style="color:white;background-color:#000000;text-align: center;height:8%;
+		font-size:18px;padding-top: 10px;position:fixed;left: 0;
+   bottom: 0;
+   width: 100%;">
+    Copyright © Online Quiz System.  All Rights
+	Reserved | Contact Us: +91 90000 00000
+    </div> 
+	</body>
+</html>
